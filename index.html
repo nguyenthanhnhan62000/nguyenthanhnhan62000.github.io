@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Khoa Pham WebRTC</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+        <script src="https://cdn.socket.io/4.1.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+        <!-- <script src="./socket.io.js"></script> -->
+    </head>
+    <body>
+        <div id="div-chat">
+            <p>Online Users</p>
+            <ul id="ulUser">
+            </ul>
+            <h3 id="my-peer-id">My peer ID is: </h3>
+            <video id="localStream" width="300" controls></video>
+            <br /><br />
+            <video id="remoteStream" width="300" controls></video>
+            <br /><br />
+
+            <input type="text" id="remoteId" placeholder="Remote ID">
+            <input type="button" value="Call" id="btnCall">
+        </div>  
+        <div id="div-dang-ky">
+            <br>
+            <input type="text" id="txtUsername" placeholder="Enter your username">
+            <input type="button" value="Sign Up" id="btnSignUp">
+            
+        </div>
+        
+    </body>
+    <script src="main.js"></script>
+</html>
+
